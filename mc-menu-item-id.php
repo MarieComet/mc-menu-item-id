@@ -81,7 +81,7 @@ class MC_Menu_Item_Id {
 	 */
 	public function add_custom_fields( $id, $item, $depth, $args ) { ?>
 
-		<p class="field-css-id description">
+		<p class="field-css-id description description-thin">
 			<label for="edit-menu-item-id-<?php echo esc_attr( $item->ID ); ?>">
 				<?php _e( 'CSS ID (optional, must be unique)', 'mc-menu-item-id' ); ?><br />
 				<input type="text" id="edit-menu-item-id-<?php echo esc_attr( $item->ID ); ?>" class="widefat code edit-menu-item-id" name="menu-item-item_id[<?php echo esc_attr( $item->ID ); ?>]" value="<?php echo esc_attr( $item->item_id ); ?>" />
