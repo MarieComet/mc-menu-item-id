@@ -1,8 +1,8 @@
 # Menu Item ID #
 
-Author URI: https://www.mariecomet.fr
-Contributors: Marie Comet
-License: GNU General Public License v3 or later.
+* Author URI: https://www.mariecomet.fr
+* Contributors: Marie Comet
+* License: GNU General Public License v3 or later.
 
 ## Description ##
 
