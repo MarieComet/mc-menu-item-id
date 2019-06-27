@@ -55,7 +55,7 @@ class MC_Menu_Item_Id {
 	 * @return void
 	 */
 	public function textdomain() {
-		load_plugin_textdomain( 'mc_mii', false, dirname( plugin_basename( __FILE__ ) ) . '/languages' );
+		load_plugin_textdomain( 'mc-menu-item-id', false, dirname( plugin_basename( __FILE__ ) ) . '/languages' );
 	}
 
 	/**
@@ -82,9 +82,9 @@ class MC_Menu_Item_Id {
 	 */
 	public function add_custom_fields( $id, $item, $depth, $args ) { ?>
 
-		<p class="field-css-id description description-thin">
+		<p class="field-css-id description">
 			<label for="edit-menu-item-id-<?php echo esc_attr( $item->ID ); ?>">
-				<?php _e( 'CSS id (optional)' ); ?><br />
+				<?php _e( 'CSS ID (optional, must be unique)', 'mc-menu-item-id' ); ?><br />
 				<input type="text" id="edit-menu-item-id-<?php echo esc_attr( $item->ID ); ?>" class="widefat code edit-menu-item-id" name="menu-item-item_id[<?php echo esc_attr( $item->ID ); ?>]" value="<?php echo esc_attr( $item->item_id ); ?>" />
 			</label>
 		</p>
