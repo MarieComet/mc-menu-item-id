@@ -6,10 +6,10 @@
  * Author: Marie Comet
  * Author URI: https://www.mariecomet.fr
  * Version: 1.0.0
- * License: GPLv2
+ * License: GPLv3
  * License URI: http://www.gnu.org/licenses/gpl-2.0.html
  *
- * Text Domain: mc_mii
+ * Text Domain: mc-menu-item-id
  * Domain Path: /languages/
  *
  */
@@ -41,10 +41,10 @@ class MC_Menu_Item_Id {
 		// Edit menu walker
 		add_filter( 'wp_edit_nav_menu_walker', array( $this, 'edit_walker' ), 10, 2 );
 
-
+		// Add ID to link item
 		add_filter( 'nav_menu_link_attributes', array( $this, 'add_id_attributes_link' ), 10, 3 );
 
-	} // end constructor
+	}
 
 
 	/**
@@ -66,15 +66,14 @@ class MC_Menu_Item_Id {
 	 * @return object The menu item.
 	 */
 	public function add_custom_fields_meta( $menu_item ) {
-		$menu_item->item_id = get_post_meta( $menu_item->ID, '_menu_item_id', true );
 
-		//error_log(print_r($menu_item, true));
+		$menu_item->item_id = get_post_meta( $menu_item->ID, '_menu_item_id', true );
 
 		return $menu_item;
 	}
 
 	/**
-	 * Add custom megamenu fields data to the menu.
+	 * Add custom ID field to the menu edit screen.
 	 *
 	 * @access public
 	 * @param object $menu_item A single menu item.
