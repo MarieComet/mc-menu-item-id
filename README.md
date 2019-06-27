@@ -6,5 +6,6 @@
 
 ## Description ##
 
-This WordPress plugin add ID fields to menu items and output them.
+This WordPress plugin adds an ID field to menu items and displays them.
+
 Once the plugin is activated you will see a new field ("CSS ID") in the parameters of the menu items.

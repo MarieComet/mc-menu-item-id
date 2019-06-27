@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Menu Item ID
  * Plugin URI: https://github.com/MarieComet/mc-menu-item-id
- * Description: This WordPress plugin add ID fields to menu items and output them.
+ * Description: This WordPress plugin adds an ID field to menu items and displays them.
  * Author: Marie Comet
  * Author URI: https://www.mariecomet.fr
  * Version: 1.0.0

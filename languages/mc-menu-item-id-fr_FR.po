@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Menu Item ID\n"
 "Report-Msgid-Bugs-To: Translator Name <translations@example.com>\n"
-"POT-Creation-Date: 2019-06-27 14:22+0200\n"
+"POT-Creation-Date: 2019-06-27 14:34+0200\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: Marie Comet <hello@mariecomet.fr>\n"
@@ -24,6 +24,6 @@ msgstr ""
 "X-Generator: Poedit 1.8.7\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: mc-menu-item-id.php:87
+#: mc-menu-item-id.php:86
 msgid "CSS ID (optional, must be unique)"
-msgstr "ID CSS (optionnel, doit être unique)"
+msgstr "ID CSS (facultatif, doit être unique)"
